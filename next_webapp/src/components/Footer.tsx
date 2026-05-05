@@ -287,6 +287,21 @@ const Footer = () => {
           background: rgba(255,255,255,0.9);
           box-shadow: 0 0 8px rgba(255,255,255,0.7), 0 0 16px rgba(255,255,255,0.3);
         }
+		
+		.newsletter-email-input::placeholder {
+  		color: #ffffff !important;
+ 		 opacity: 1 !important;
+		}
+
+		.newsletter-email-input::-webkit-input-placeholder {
+ 		 color: #ffffff !important;
+ 		 opacity: 1 !important;
+		}
+
+		.newsletter-email-input::-moz-placeholder {
+  		color: #ffffff !important;
+ 		 opacity: 1 !important;
+		}
 
         @media (max-width: 767px) {
           .footer-col-links {
@@ -594,7 +609,7 @@ const Footer = () => {
 										aria-describedby={
 											newsletterError ? "footer-newsletter-error" : undefined
 										}
-										className="min-w-0 flex-1 rounded-lg px-2.5 py-1.5 text-white shadow-[inset_0_1px_0_rgba(255,255,255,0.12)] outline-none transition placeholder:text-white/50"
+										className="newsletter-email-input min-w-0 flex-1 rounded-lg px-2.5 py-1.5 text-white shadow-[inset_0_1px_0_rgba(255,255,255,0.12)] outline-none transition placeholder:text-white placeholder:opacity-100"
 										style={{
 											fontSize: "0.85rem",
 											background: "rgba(255,255,255,0.1)",
